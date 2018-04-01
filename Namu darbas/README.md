@@ -8,12 +8,12 @@
 
 * Gerai. Tik elementas &lt;strong&gt; neturi atributo cite
 <pre>
-  <strong cite>Sek paskui tą
+  &lt;strong cite&gt;Sek paskui tą
 </pre>
 
 taip pat, kas yra [object Object]?:
 <pre>
-  <q cite="[object Object]">
+  &lt;q cite="[object Object]"&gt;
 </pre>
 
 ## HTML3
