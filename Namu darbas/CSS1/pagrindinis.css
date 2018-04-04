@@ -1,12 +1,11 @@
 h2{
   color: pink;
-}
+  }
+h3{
+    color: pink;
+  }
 p.normal{
   font-style: normal;
-}
-
-h3{
-  color: pink;
 }
 p.oblique{
   font-style: oblique;
