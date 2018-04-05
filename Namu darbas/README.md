@@ -73,4 +73,13 @@
 
 ## CSS1
 
-* Na ne visai. Nėra pakeistas šriftas. Be to naudojamas elementas i - italic, o jis čia neturėtų būti naudojamas, pakreipimas aprašomas su css.
+* Geriau. Šriftą gal konkretų? sans-serif yra šriftų tipas.
+
+## CSS2
+
+* Gerai. Didžiosios mažosios raidės - trūksta. p elementas turi nedidelį padding jei pažiūrėtum į užduoties paveiksliuką.
+
+## CSS3
+
+* Puikiai.
+
