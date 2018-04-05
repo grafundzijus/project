@@ -1,0 +1,43 @@
+h1{
+  color: #1ea7bf;
+  font-family: georgia, times, serif;
+  text-shadow: 1px 1px 10px #131b28;
+}
+
+h3{
+  color: #1ea7bf;
+  font-family: "Gill sans", Arial, sans-serif
+  text-transform: uppercase;
+}
+
+
+a{
+  text-decoration: none;
+  font-family: georgia, times, serif;
+  color: #1ea7bf;
+
+}
+a:hover{
+  color: green;
+  font-family: georgia, times, serif;
+}
+
+.apr{
+  font-family: georgia, times, serif;
+  font-weight: bold;
+
+}
+
+h2{
+  color: #1ea7bf;
+  font-family: "Gill sans", Arial, sans-serif;
+}
+
+.ist{
+  font-family: Arial, helvetica, sans-serif;
+}
+
+#autorius{
+  font-style: italic;
+  text-align: right;
+}
