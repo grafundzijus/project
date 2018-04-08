@@ -19,8 +19,16 @@ a{
   padding: 5px;
 }
 
+.links{
+  width: 600px;
+  border-top: 3px solid black;
+  border-bottom: 1px solid black;
+  margin: auto;
+}
+
 li{
   display: inline;
+  text-shadow: 0 0 2px black;
 
 
 }
@@ -32,18 +40,23 @@ a:hover{
 
 ul{
   list-style-type: none;
-  border-top: 3px solid black;
+
 }
 
 .keys{
   display: block;
   margin: auto;
   padding: 10px;
-  border-top: 1px solid black;
+
 }
 
 p{
+  width: 600px;
+  margin: auto;
   text-align: center;
+  font-family: sans-serif;
+  color: grey;
+  text-shadow: 0 0 2px black;
 
 
 }
