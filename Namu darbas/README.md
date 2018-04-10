@@ -85,4 +85,4 @@
 
 ## CSS4
 
-* Ne visai gerai. Rekomenduočiau ul dėti tiek viršutinį tiek apatinė rėmelį, o ne dviem atskiriems elementams. Ir problema išsispręstų.
+* Puikiai.
