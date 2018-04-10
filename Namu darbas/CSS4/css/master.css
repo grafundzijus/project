@@ -1,10 +1,10 @@
 .bord{
-  width: 1280px;
-  height: 500px;
+  margin: auto;
   border-style: double;
   box-shadow: 0 0 8px purple;
 }
 
+<<<<<<< HEAD
 .middle{
 	width:650px;
 	margin:auto;
@@ -12,9 +12,17 @@
 
 .logo{
   display: block;
+=======
+.centrinis{
+  width: 700px;
+>>>>>>> e5f650b66a6254fef60b226eebb5052a9b049e4d
   margin: auto;
-  padding: 20px;
+}
 
+img{
+  display: block;
+  margin: auto;
+  padding: 10px;
 }
 
 a{
@@ -26,8 +34,8 @@ a{
 
 li{
   display: inline;
-	padding:5px;
-
+  text-shadow: 0 0 2px black;
+  margin:auto;
 }
 
 a:hover{
@@ -36,19 +44,17 @@ a:hover{
 }
 
 ul{
-	list-style-type: none;
-	border-top: 3px solid black;
-}
-
-.keys{
-  display: block;
+  list-style-type: none;
   margin: auto;
-  padding: 10px;
-  border-top: 1px solid black;
+  border-top: 3px solid black;
+  border-bottom: 1px solid black;
 }
 
 p{
+  padding: 20px;
+  margin: auto;
   text-align: center;
-
-
+  font-family: sans-serif;
+  color: grey;
+  text-shadow: 0 0 2px black;
 }
