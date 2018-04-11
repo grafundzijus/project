@@ -86,3 +86,28 @@
 ## CSS4
 
 * Puikiai.
+
+## CSS5
+
+* Gerai. Kai jau mokam stilių mygtukus galime padaryti vienodo pločio, na visus gražiai vienodus.
+
+## CSS6
+
+* Nestilizuota forma.
+
+## JS1
+
+* Puikiai.
+
+## JS2
+
+* Puikiai.
+
+## JS3
+
+* Nėra funkcijos.
+
+## JS4
+
+* Pranešimą pagal užduotį prašoma išspausdinti konsolėje.
+
