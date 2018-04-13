@@ -6,27 +6,30 @@
   </head>
   <body>
     <script type="text/javascript">
-
       var preke1 = {
-        Prekė: "Atsuktuvas",
-			  PagaminimoData: 2018,
-			  Spava: "geltona",
-			  Kaina: "5 EUR",
+        "preke": "Atsuktuvas",
+        "data": 2018,
+        "spalva": "geltona",
+        "kaina": "5 EUR",
       }
       var preke2 = {
-        Prekė: "Raktas",
-			  PagaminimoData: 2018,
-			  RankenosSpava: "pilka",
-			  Kaina: "2 EUR",
+        "preke": "Raktas",
+        "data": 2018,
+        "spalva": "pilka",
+        "kaina": "2 EUR",
       }
-      function preke(prekiuVisuma){
-
       var prekiuVisuma = [preke1, preke2];
-      for (var i = 0; i <prekiuVisuma.length; i++) {
-        console.log(prekiuVisuma);
+      preke(prekiuVisuma);
+
+      function preke(prekiuVisuma){
+          for (var i = 0; i <prekiuVisuma.length; i++){
+            console.log("#" + Number(i+1));
+            console.log("Prekė: " + prekiuVisuma[i].preke);
+            console.log("Pagaminimo data: " + prekiuVisuma[i].data);
+            console.log("Spalva: " + prekiuVisuma[i].spalva);
+            console.log("Kaina: " + prekiuVisuma[i].kaina);
+          }
       }
-      }
-      preke();
     </script>
   </body>
 </html>
