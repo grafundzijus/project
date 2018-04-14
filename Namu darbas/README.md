@@ -111,3 +111,26 @@
 
 * Pranešimą pagal užduotį prašoma išspausdinti konsolėje.
 
+## JS5
+
+* Gerai. Atitraukimai nuo krašto.
+
+## JS6
+
+* Kam aprašytoje funckijoje argumentas x, jeigu jį vėl aspirašai ciklo viduje
+
+## JS7
+
+* Funkcija neturi nei vieno argumento. Ir funkcija nespausdina tik elemento su index 2. O man reikia, kad nespausdintų pasirinkto. Pvz. vieno funkcijos iškvietimo metu, nenoriu, kad spausdintų Petro, kitu funkcijos iškvietimu nespausdintų Urtės. Funkcija turi būti universali, tam argumentai ir reikalingi. Be to susitvarkyti reikia su atitraukimais nuo kra6to.
+
+## JS8
+
+* Panašiai kaip ir su JS7, funkcija kiekvienu atveju turi grąžinti masyvą su pašalintu elementu, kuris paduodamas argumentu.
+
+## JS9
+
+* Puikiai.
+
+## JS10
+
+* Neveikia.
