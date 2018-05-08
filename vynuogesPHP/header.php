@@ -27,7 +27,7 @@
       <li> <a href="#">Patarimai</a></li>
       <li> <a href="galery.html"> Galerija</a>  </li>
       <li> <a href="#">Parduotuvė</a></li>
-      <li> <button onclick="document.getElementById('id01').style.display='block'">Prisijungti</button></li>
+      <li> <button data-target="modal2" class="btn modal-trigger">Prisijungti</button></li>
     </ul>
   </div>
 </nav>
@@ -38,5 +38,5 @@
   <li> <a href="#">Patarimai</a></li>
   <li> <a href="galery.html"> Galerija</a></li>
   <li> <a href="#">Parduotuvė</a></li>
-  <li> <button onclick="document.getElementById('id01').style.display='block'">Prisijungti</button></li>
+  <li> <button data-target="modal2" class="btn modal-trigger">Prisijungti</button></li>
 </ul>
