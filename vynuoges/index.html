@@ -7,9 +7,6 @@
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link rel="stylesheet" href="css/master.css">
-
-
-
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
@@ -21,22 +18,18 @@
           <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><img src="img/vynuoges-logo-214x67.png" alt=""><i class="material-icons"></i></a>
           <ul class="right hide-on-med-and-down">
             <li> <a href="index.html">Pagrindinis</a></li>
-            <li> <a href="#">Blogas</a></li>
-            <li> <a href="galery.html"> Galerija</a></li>
             <li> <a href="store.html">Parduotuvė</a></li>
-            <li> <button data-target="modal2" class="btn modal-trigger">Prisijungti</button></li>
-            <li> <button data-target="modal3" class="btn modal-trigger">Registruotis</button></li>
+            <li> <button onclick="document.getElementById('id01').style.display='block'">Prisijungti</button></li>
+            <li> <button onclick="document.getElementById('id02').style.display='block'">Registruotis</button></li>
           </ul>
         </div>
       </nav>
 
       <ul class="sidenav" id="mobile-demo">
         <li> <a href="index.html">Pagrindinis</a></li>
-        <li> <a href="#">Patarimai</a></li>
-        <li> <a href="galery.html"> Galerija</a></li>
         <li> <a href="store.html">Parduotuvė</a></li>
-        <li> <button data-target="modal2" class="btn modal-trigger">Prisijungti</button></li>
-        <li> <button data-target="modal3" class="btn modal-trigger">Registruotis</button></li>
+        <li> <button onclick="document.getElementById('id01').style.display='block'">Prisijungti</button></li>
+        <li> <button onclick="document.getElementById('id02').style.display='block'">Registruotis</button></li>
       </ul>
       <div class="parallax-container">
         <div class="parallax"><img src="img/grape.jpg"></div>
@@ -68,25 +61,17 @@
       <div class="parallax-container">
         <div class="parallax"><img src="img/grape.jpg"></div>
       </div>
+      <!-- footer -->
       <footer class="page-footer purple lighten-3">
           <div class="container">
             <div class="row">
-              <div class="col l6 s12">
+              <div class="col l12 s12" >
                 <h5 class="white-text">Kontaktai</h5>
-                <p class="grey-text text-lighten-4">IĮ „Ekoflora“</p>
-                <p class="grey-text text-lighten-4">Andrius Diliautas</p>
-                <p class="grey-text text-lighten-4">El. paštas: INFO@VYNUOGES.LT</p>
-                <p class="grey-text text-lighten-4"><button data-target="modal1" class="btn modal-trigger">Rašykite mums</button></p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text"></h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="index.html">Pagrindinis</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#">Blogas</a></li>
-                  <li><a class="grey-text text-lighten-3" href="galery.html"> Galerija</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#">Parduotuvė</a></li>
-                  <li> <button data-target="modal2" class="btn modal-trigger">Prisijungti</button></li>
-                  <li> <button data-target="modal3" class="btn modal-trigger">Registruotis</button></li>
+                  <li>IĮ „Ekoflora“</li>
+                  <li>Andrius Diliautas</li>
+                  <li>El. paštas: INFO@VYNUOGES.LT</li>
+                  <li><button style="width: auto" onclick="document.getElementById('id03').style.display='block'">Rašykite mums</button></li>
                 </ul>
               </div>
             </div>
@@ -97,106 +82,87 @@
             </div>
           </div>
         </footer>
-       <!-- Modal Structure -->
-       <div id="modal1" class="modal">
-         <div class="modal-content">
-           <h4>Rašykite mums</h4>
-           <div class="row">
-             <form class="col s12">
-               <div class="row">
-                 <div class="input-field col s6">
-                   <input id="first_name" type="text" class="validate">
-                   <label for="first_name">Vardas</label>
-                 </div>
-                 <div class="input-field col s6">
-                   <input id="last_name" type="text" class="validate">
-                   <label for="last_name">Pavardė</label>
-                 </div>
-               </div>
-               <div class="row">
-                 <div class="input-field col s12">
-                   <input id="email" type="email" class="validate">
-                   <label for="email">Email</label>
-                 </div>
-               </div>
-               <div class="row">
-                  <form class="col s12">
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <textarea id="textarea1" class="materialize-textarea"></textarea>
-                        <label for="textarea1">Tekstas</label>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-             </form>
+        <!-- The Modal feedback -->
+        <div id="id03" class="modal01">
+          <span onclick="document.getElementById('id03').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+
+          <!-- Modal Content -->
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="container">
+                  <label for="name">Vardas</label>
+                  <input type="text" id="name" name="Vardas" placeholder="Jūsų vardas">
+                  <label for="email">El. paštas</label>
+                  <input type="text" id="email" name="email" placeholder="El. paštas">
+                  <label for="subject">Žinutė</label>
+                  <textarea id="subject" name="žinutė" placeholder="Jūsų žinutė..." style="height:200px"></textarea>
+                  <input type="submit" value="Submit">
+              </div>
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+          </form>
+        </div>
+       <!-- The Modal login -->
+       <div id="id01" class="modal01">
+         <span onclick="document.getElementById('id01').style.display='none'"
+       class="close" title="Close Modal">&times;</span>
+
+         <!-- Modal Content -->
+         <form class="modal-content animate" action="/action_page.php">
+
+
+           <div class="container">
+             <label for="email"><b>El. paštas</b></label>
+             <input type="text" placeholder="Įveskite el. paštą" name="email" required>
+
+             <label for="psw"><b>Slaptažodis</b></label>
+             <input type="password" placeholder="Įveskite slaptažodį" name="psw" required>
+
+             <button type="submit">Prisijungti</button>
+             <label>
+              <input type="checkbox" checked="checked" name="remember">
+              <span>Prisiminti mane</span>
+             </label>
            </div>
-         </div>
-         <div class="modal-footer">
-           <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Siųsti</a>
-         </div>
+
+           <div class="container" style="background-color:#f1f1f1">
+             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+             <span class="psw">Pamiršau <a href="#">slaptažodį</a></span>
+           </div>
+         </form>
        </div>
+  <!-- The Modal (contains the Sign Up form) -->
+<div id="id02" class="modal01">
+  <span onclick="document.getElementById('id02').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+   <form class="modal-content animate" action="/action_page.php">
+    <div class="container">
+      <h5>Registruotis</h5>
 
+      <hr>
+      <label for="email"><b>El. paštas</b></label>
+      <input type="text" placeholder="įveskit el. paštą" name="email" required>
 
-   <!-- Modal Structure -->
-  <div id="modal2" class="modal">
-    <div class="modal-content">
-      <form class="modal-content animate" action="/action_page.php">
-        <div class="imgcontainer">
-          <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
-        </div>
+      <label for="psw"><b>Slaptažodis</b></label>
+      <input type="password" placeholder="Įveskit slaptažodį" name="psw" required>
 
-        <div class="container">
-          <label for="uname"><b>Vartotojas</b></label>
-          <input type="text" placeholder="Vartotojas" name="uname" required>
+      <label for="psw-repeat"><b>Pakartokit slaptažodį</b></label>
+      <input type="password" placeholder="Pakartotit slaptažodį" name="psw-repeat" required>
 
-          <label for="psw"><b>Slaptažodis</b></label>
-          <input type="password" placeholder="Slaptažodis" name="psw" required>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">  <span>Prisiminti mane</span>
+      </label>
 
-          <button type="submit">Prisijungti</button>
-          <label>
-            <input type="checkbox" checked="checked" name="remember"> Prisiminti mane
-          </label>
-        </div>
-
-        <div class="container" style="background-color:#f1f1f1">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Atšaukti</button>
-          <span class="psw">Pamiršau <a href="#">slaptažodį</a></span>
-        </div>
-       </form>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signup">Patvirtinti</button>
       </div>
-
-  </div>
-
-  <!-- Modal Structure -->
-    <div id="modal3" class="modal">
-      <div class="modal-content">
-        <div class="container">
-          <h1>Registruotis</h1>
-          <p>aha</p>
-          <hr>
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="El. paštas" name="email" required>
-
-          <label for="psw"><b>Slaptažodis</b></label>
-          <input type="password" placeholder="Slaptažodis" name="psw" required>
-
-          <label for="psw-repeat"><b>Pakartoti slaptažodį</b></label>
-          <input type="password" placeholder="Pakartoti slaptažodį" name="psw-repeat" required>
-
-          <label>
-            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Prisiminti mane
-          </label>
-
-          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-          <div class="clearfix">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-            <button type="submit" class="signup">Registruotis</button>
-          </div>
-          </div>
-
     </div>
+  </form>
+</div>
+
+
 
       <script src="js/jquery-3.3.1.js" charset="utf-8"></script>
       <!--JavaScript at end of body for optimized loading-->
@@ -204,10 +170,20 @@
       <script type="text/javascript">
       $('.sidenav').sidenav();
       $('.parallax').parallax();
-      $('.modal').modal();
-      $('#textarea1').val('New Text');
-        M.textareaAutoResize($('#textarea1'));
+
       </script>
+      <script>
+          // Get the modal
+          var modal = document.getElementById('id01', 'id02', 'id03');
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+
+          </script>
 
     </body>
   </html>
